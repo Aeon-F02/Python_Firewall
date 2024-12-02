@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/AeonF.egg-info/PKG-INFO
+src/AeonF.egg-info/SOURCES.txt
+src/AeonF.egg-info/dependency_links.txt
+src/AeonF.egg-info/entry_points.txt
+src/AeonF.egg-info/requires.txt
+src/AeonF.egg-info/top_level.txt
+src/configs/default_rules.json
+src/configs/settings.yaml
