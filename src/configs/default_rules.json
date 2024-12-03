@@ -1,1 +1,65 @@
-
+{
+    "interfaces": {
+      "docker0": {
+        "ip": "172.17.0.1",
+        "netmask": "255.255.0.0",
+        "broadcast": "172.17.255.255",
+        "rules": {
+          "allow_inbound": true,
+          "allow_outbound": true,
+          "block_ports": []
+        }
+      },
+      "eth0": {
+        "mac": "fc:34:97:96:ba:2d",
+        "rules": {
+          "allow_inbound": true,
+          "allow_outbound": true,
+          "block_ports": []
+        }
+      },
+      "lo": {
+        "ip": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "rules": {
+          "allow_inbound": true,
+          "allow_outbound": true,
+          "allow_only_local": true,
+          "block_ports": []
+        }
+      },
+      "wlan0": {
+        "ip": "192.168.68.185",
+        "netmask": "255.255.255.0",
+        "broadcast": "192.168.68.255",
+        "ipv6": [
+          {
+            "address": "2409:40d2:50:1b89:ee2e:98ff:feca:b08d",
+            "scope": "global",
+            "prefixlen": 64
+          },
+          {
+            "address": "2409:40d2:50:1b89:c7b5:10cd:a783:9b82",
+            "scope": "global",
+            "prefixlen": 64
+          },
+          {
+            "address": "fe80::ee2e:98ff:feca:b08d",
+            "scope": "link",
+            "prefixlen": 64
+          }
+        ],
+        "rules": {
+          "allow_inbound": true,
+          "allow_outbound": true,
+          "block_ports": []
+        }
+      }
+    },
+    "default_policies": {
+      "allow_inbound": false,
+      "allow_outbound": true,
+      "block_ports": [23, 25]
+    }
+  }
+  
